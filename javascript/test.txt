@@ -1,0 +1,14 @@
+node debug
+emitter.on(event,listener)
+
+
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
+// Bind event and event  handler as follows
+eventEmitter.on('eventName', eventHandler);
+// Fire an event 
+eventEmitter.emit('eventName');
+
+In Node Application, any async function accepts a callback as the last parameter 
+and a callback function accepts an error as the first parameter. 
+
